@@ -1,1 +1,1 @@
-String makeApiBackendUrl(String path) => 'http://45.148.96.13:3000/$path';
+String makeApiBackendUrl(String path) => 'http://146.235.207.248:3000/$path';
