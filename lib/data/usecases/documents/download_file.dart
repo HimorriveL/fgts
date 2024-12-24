@@ -3,7 +3,7 @@ import '../../../domain/usecases/all.dart';
 import '../../http/all.dart';
 
 class DownloadFile implements IDownloadFile {
-  final HttpClient httpClient;
+  final CustomHttpClient httpClient;
   final String url;
 
   DownloadFile({required this.httpClient, required this.url});

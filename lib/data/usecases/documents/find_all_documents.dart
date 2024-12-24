@@ -5,7 +5,7 @@ import '../../http/all.dart';
 import '../../models/all.dart';
 
 class FindAllDocuments implements IFindAllDocuments {
-  final HttpClient httpClient;
+  final CustomHttpClient httpClient;
   final String url;
 
   FindAllDocuments({required this.httpClient, required this.url});

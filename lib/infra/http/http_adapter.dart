@@ -1,9 +1,11 @@
+import 'dart:io';
+
 import '../../data/http/all.dart';
 
 import 'package:http/http.dart';
 import 'dart:convert';
 
-class HttpAdapter implements HttpClient {
+class HttpAdapter implements CustomHttpClient {
   final Client client;
 
   HttpAdapter(this.client);
@@ -29,6 +31,9 @@ class HttpAdapter implements HttpClient {
         : Uri.parse(url);
     try {
       if (method == 'post') {
+        /*  final resp = await ioClient.post(uriParams,
+            body: jsonBody, headers: defaultHeaders);
+        print(resp);*/
         futureResponse =
             client.post(uriParams, headers: defaultHeaders, body: jsonBody);
       } else if (method == 'get') {

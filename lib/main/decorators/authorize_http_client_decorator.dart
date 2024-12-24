@@ -1,10 +1,10 @@
 import '../../data/cache/all.dart';
 import '../../data/http/all.dart';
 
-class AuthorizeHttpClientDecorator implements HttpClient {
+class AuthorizeHttpClientDecorator implements CustomHttpClient {
   final FetchSecureCacheStorage fetchSecureCacheStorage;
   final IDeleteSecureCacheStorage deleteSecureCacheStorage;
-  final HttpClient decoratee;
+  final CustomHttpClient decoratee;
 
   AuthorizeHttpClientDecorator({
     required this.fetchSecureCacheStorage,

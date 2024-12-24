@@ -5,7 +5,7 @@ import '../../http/all.dart';
 import '../../models/all.dart';
 
 class FindAllProducts implements IFindAllProducts {
-  final HttpClient httpClient;
+  final CustomHttpClient httpClient;
   final String url;
 
   FindAllProducts({required this.httpClient, required this.url});
