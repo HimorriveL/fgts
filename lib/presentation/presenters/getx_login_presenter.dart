@@ -7,13 +7,7 @@ import '../../ui/pages/all.dart';
 import '../mixins/all.dart';
 
 class GetxLoginPresenter extends GetxController
-    with
-        LoadingManager,
-        NavigationManager,
-        UIMainErrorManager,
-        FormManager,
-        UIUsernameManager,
-        UIPasswordManager
+    with LoadingManager, NavigationManager, UIMainErrorManager, FormManager
     implements LoginPresenter {
   final IAuthentication authentication;
   final ISaveAccount saveCurrentAccount;

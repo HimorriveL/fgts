@@ -18,7 +18,7 @@ class GetxDashboardPresenter extends GetxController
         DocumentFullManager,
         DocumentStatusManager,
         LoginManager,
-        ShowPdfManager,
+        ShowCsvManager,
         TableManager
     implements DashboardPresenter {
   final IFindAllProducts findAllProducts;
